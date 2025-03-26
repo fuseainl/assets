@@ -1,0 +1,26 @@
+/* Left menu bar */
+.custom.light #sidebar {
+	background-color: #019cde;
+}
+
+.custom.light #sidebar a,
+.custom.light #sidebar button {
+	color: #ffffff; /* TOP BACKGROUND COLOR */
+}
+
+.custom.light #sidebar a:hover,
+.custom.light #sidebar button:hover,
+.custom.light #sidebar #dropdownDots button {
+	color: #333333; /* TOP BACKGROUND COLOR */
+}
+
+
+/* main screen */
+.custom.light .app > div > div:nth-child(2) > div {
+	background-color: #019cde;
+}
+
+/* top nav */
+.custom.light .app #nav {
+	background-color:#f4f4f4 !important;
+}

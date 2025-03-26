@@ -1,0 +1,26 @@
+/* Left menu bar */
+.blijfgroep.light #sidebar {
+	background-color: #e31818;
+}
+
+.blijfgroep.light #sidebar a,
+.blijfgroep.light #sidebar button {
+	color: #ffffff; /* TOP BACKGROUND COLOR */
+}
+
+.blijfgroep.light #sidebar a:hover,
+.blijfgroep.light #sidebar button:hover,
+.blijfgroep.light #sidebar #dropdownDots button {
+	color: #333333; /* TOP BACKGROUND COLOR */
+}
+
+
+/* main screen */
+.blijfgroep.light .app > div > div:nth-child(2) > div {
+	background-color: #e31818;
+}
+
+/* top nav */
+.blijfgroep.light .app #nav {
+	background-color:#f4f4f4 !important;
+}
