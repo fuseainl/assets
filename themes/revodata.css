@@ -1,26 +1,26 @@
 /* Left menu bar */
-.revodata.light #sidebar {
+.custom.light #sidebar {
 	background-color: #0A0A56;
 }
 
-.revodata.light #sidebar a,
-.revodata.light #sidebar button {
+.custom.light #sidebar a,
+.custom.light #sidebar button {
 	color: #ffffff; /* TOP BACKGROUND COLOR */
 }
 
-.revodata.light #sidebar a:hover,
-.revodata.light #sidebar button:hover,
-.revodata.light #sidebar #dropdownDots button {
+.custom.light #sidebar a:hover,
+.custom.light #sidebar button:hover,
+.custom.light #sidebar #dropdownDots button {
 	color: #333333; /* TOP BACKGROUND COLOR */
 }
 
 
 /* main screen */
-.revodata.light .app > div > div:nth-child(2) > div {
+.custom.light .app > div > div:nth-child(2) > div {
 	background-color: #0A0A56;
 }
 
 /* top nav */
-.revodata.light .app #nav {
+.custom.light .app #nav {
 	background-color:#f4f4f4 !important;
 }
