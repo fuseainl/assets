@@ -1,6 +1,6 @@
 /* Left menu bar */
 .custom.light #sidebar {
-	background-color: #dbd9d9;
+	background-color: #9e9d9d;
 }
 
 .custom.light #sidebar a,
@@ -17,7 +17,7 @@
 
 /* main screen */
 .custom.light .app > div > div:nth-child(2) > div {
-	background-color: #dbd9d9;
+	background-color: #9e9d9d;
 }
 
 /* top nav */
