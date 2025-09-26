@@ -17,6 +17,18 @@
 	color: #333333; /* TOP BACKGROUND COLOR */
 }
 
+/* Remove the white-ish hover highlight used by Tailwind utility classes */
+.custom.light #sidebar .hover\:bg-gray-100\/50:hover,
+.custom.light #sidebar .hover\:bg-gray-100:hover,
+.custom.light #sidebar .dark\:hover\:bg-gray-900\/50:hover {
+    background-color: rgba(0, 0, 0, 0.06) !important; /* subtle dark overlay on any bg */
+    color: inherit;
+}
+
+/* Remove/neutralize the bottom white gradient behind the user section */
+.custom.light #sidebar .sidebar-bg-gradient-to-t {
+    background: none !important;
+}
 
 /* main screen */
 .custom.light .app > div > div:nth-child(2) > div {
