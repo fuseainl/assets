@@ -1,8 +1,6 @@
 /* Left menu bar */
 .custom.light #sidebar {
 	background-color: #019cde;
-	/* Set a single base text color for the entire sidebar */
-    color: #333333;
 }
 
 .custom.light #sidebar a,
@@ -14,7 +12,7 @@
 .custom.light #sidebar a:hover,
 .custom.light #sidebar button:hover,
 .custom.light #sidebar #dropdownDots button {
-	color: #333333; /* TOP BACKGROUND COLOR */
+    color: inherit; /* keep text white on hover */
 }
 
 /* Remove the white-ish hover highlight used by Tailwind utility classes */
