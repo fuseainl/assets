@@ -1,6 +1,8 @@
 /* Left menu bar */
 .custom.light #sidebar {
 	background-color: #e31818;
+	/* Set a single base text color for the entire sidebar */
+    color: #ffffff;
 }
 
 .custom.light #sidebar a,
@@ -8,7 +10,6 @@
     /* Let links and buttons inherit the sidebar text color */
     color: inherit;
 }
-
 
 .custom.light #sidebar a:hover,
 .custom.light #sidebar button:hover,
