@@ -1,8 +1,7 @@
 /* Left menu bar */
 .custom.light #sidebar {
 	background-color: #e31818;
-	/* Set a single base text color for the entire sidebar */
-    color: #ffffff;
+
 }
 
 .custom.light #sidebar a,
