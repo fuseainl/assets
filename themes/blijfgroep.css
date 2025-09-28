@@ -2,8 +2,6 @@
 .custom.light #sidebar {
 	background-color: #e31818;
 
-}
-
 .custom.light #sidebar a,
 .custom.light #sidebar button {
     /* Let links and buttons inherit the sidebar text color */
