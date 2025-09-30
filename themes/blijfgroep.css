@@ -1,72 +1,66 @@
 /* Left menu bar (collapsed bar) */
 .custom.light #sidebar {
 	background-color: #e31818;
-	color: #fff !important; /* standaard: tekst wit */
+	color: #fff !important;
 }
 
-/* Alles binnen de collapsed sidebar erft de kleur (overrulet Tailwind text-gray-*) */
+/* In collapsed: alles erft wit, maar icons stroke-only (geen fill) */
 .custom.light #sidebar * {
 	color: inherit !important;
 }
-
-/* Links/knoppen in collapsed sidebar */
 .custom.light #sidebar a,
 .custom.light #sidebar button {
 	color: inherit !important;
 }
-
-/* Hover in collapsed sidebar: behoud tekstkleur (geen onverwacht grijs) */
 .custom.light #sidebar a:hover,
 .custom.light #sidebar button:hover,
 .custom.light #sidebar #dropdownDots button {
 	color: inherit !important;
 }
-
-/* Iconen in collapsed sidebar altijd zwart voor contrast op rood */
+/* Iconen in collapsed: geen fill, wel zwarte stroke */
 .custom.light #sidebar svg {
 	color: #000 !important;
-	fill: currentColor !important;
 	stroke: currentColor !important;
+	fill: none !important;
 }
 
 /* Remove de witte hover highlight utility classes in collapsed sidebar */
 .custom.light #sidebar .hover\:bg-gray-100\/50:hover,
 .custom.light #sidebar .hover\:bg-gray-100:hover,
 .custom.light #sidebar .dark\:hover\:bg-gray-900\/50:hover {
-	background-color: rgba(0, 0, 0, 0.06) !important; /* subtiele overlay */
+	background-color: rgba(0, 0, 0, 0.06) !important;
 	color: inherit;
 }
 
-/* Verwijder gradients achter user sectie (beide richtingen, t en b) */
+/* Verwijder gradients */
 .custom.light #sidebar .sidebar-bg-gradient-to-t,
 .custom.light #sidebar .sidebar-bg-gradient-to-b,
-.custom.light .sidebar .sidebar-bg-gradient-to-t,
-.custom.light .sidebar .sidebar-bg-gradient-to-b {
+.custom.light [data-state="true"] .sidebar-bg-gradient-to-t,
+.custom.light [data-state="true"] .sidebar-bg-gradient-to-b {
 	background: none !important;
 }
 
-/* Expanded sidebar: maak hover-tekst zwart (ook labels van top-acties) */
-.custom.light .sidebar a:hover,
-.custom.light .sidebar button:hover {
+/* Expanded: maak chat-titel zwart zodra je ergens op de rij hovert (ook bij 3 puntjes) */
+.custom.light [data-state="true"] #sidebar-chat-group:hover a#sidebar-chat-item,
+.custom.light [data-state="true"] #sidebar-chat-group:hover a#sidebar-chat-item * {
 	color: #000 !important;
 }
 
-/* Tijdsheaders in (expanded) sidebar zwart (Gisteren / Afgelopen 7 dagen / etc.) */
-.custom.light .sidebar .text-gray-500 {
+/* Expanded: datumheaders (Today/Yesterday/Previous 7 days etc.) zwart */
+.custom.light [data-state="true"] .text-xs.text-gray-500 {
 	color: #000 !important;
 }
 
-/* Top-acties (expanded): icons altijd zwart */
+/* Expanded: top-acties icons (Nieuw, Zoeken, Notities, Werkruimte) stroke-only zwart */
 .custom.light #sidebar-new-chat-button svg,
 .custom.light #sidebar-search-button svg,
 .custom.light #sidebar-notes-button svg,
 .custom.light #sidebar-workspace-button svg {
 	color: #000 !important;
-	fill: currentColor !important;
 	stroke: currentColor !important;
+	fill: none !important;
 }
-
-/* Top-acties (expanded): labeltekst wordt zwart op hover */
+/* Expanded: labeltekst van top-acties wordt zwart bij hover */
 .custom.light #sidebar-new-chat-button:hover,
 .custom.light #sidebar-search-button:hover,
 .custom.light #sidebar-notes-button:hover,
@@ -74,12 +68,12 @@
 	color: #000 !important;
 }
 
-/* main screen (je bestaande regel) */
+/* main screen */
 .custom.light .app > div > div:nth-child(2) > div {
 	background-color: #e31818;
 }
 
-/* top nav (je bestaande regel) */
+/* top nav */
 .custom.light .app #nav {
 	background-color:#f4f4f4 !important;
 }
