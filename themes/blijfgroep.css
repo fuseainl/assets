@@ -1,52 +1,85 @@
-/* Left menu bar */
+/* Left menu bar (collapsed bar) */
 .custom.light #sidebar {
 	background-color: #e31818;
-	color: #fff !important; /* maak alle tekst wit */
+	color: #fff !important; /* standaard: tekst wit */
 }
 
-/* Alles binnen de sidebar erft de kleur (overrulet Tailwind text-gray-*) */
+/* Alles binnen de collapsed sidebar erft de kleur (overrulet Tailwind text-gray-*) */
 .custom.light #sidebar * {
 	color: inherit !important;
 }
 
-/* Links/knoppen erven en blijven wit */
+/* Links/knoppen in collapsed sidebar */
 .custom.light #sidebar a,
 .custom.light #sidebar button {
 	color: inherit !important;
 }
 
+/* Hover in collapsed sidebar: behoud tekstkleur (geen onverwacht grijs) */
 .custom.light #sidebar a:hover,
 .custom.light #sidebar button:hover,
 .custom.light #sidebar #dropdownDots button {
 	color: inherit !important;
 }
 
-/* Iconen ook wit */
+/* Iconen in collapsed sidebar altijd zwart voor contrast op rood */
 .custom.light #sidebar svg {
-	color: inherit;
+	color: #000 !important;
 	fill: currentColor !important;
 	stroke: currentColor !important;
 }
 
-/* Remove the white-ish hover highlight used by Tailwind utility classes */
+/* Remove de witte hover highlight utility classes in collapsed sidebar */
 .custom.light #sidebar .hover\:bg-gray-100\/50:hover,
 .custom.light #sidebar .hover\:bg-gray-100:hover,
 .custom.light #sidebar .dark\:hover\:bg-gray-900\/50:hover {
-	background-color: rgba(0, 0, 0, 0.06) !important;
+	background-color: rgba(0, 0, 0, 0.06) !important; /* subtiele overlay */
 	color: inherit;
 }
 
-/* Remove/neutralize the bottom white gradient behind the user section */
-.custom.light #sidebar .sidebar-bg-gradient-to-t {
+/* Verwijder gradients achter user sectie (beide richtingen, t en b) */
+.custom.light #sidebar .sidebar-bg-gradient-to-t,
+.custom.light #sidebar .sidebar-bg-gradient-to-b,
+.custom.light .sidebar .sidebar-bg-gradient-to-t,
+.custom.light .sidebar .sidebar-bg-gradient-to-b {
 	background: none !important;
 }
 
-/* main screen */
+/* Expanded sidebar: maak hover-tekst zwart (ook labels van top-acties) */
+.custom.light .sidebar a:hover,
+.custom.light .sidebar button:hover {
+	color: #000 !important;
+}
+
+/* Tijdsheaders in (expanded) sidebar zwart (Gisteren / Afgelopen 7 dagen / etc.) */
+.custom.light .sidebar .text-gray-500 {
+	color: #000 !important;
+}
+
+/* Top-acties (expanded): icons altijd zwart */
+.custom.light #sidebar-new-chat-button svg,
+.custom.light #sidebar-search-button svg,
+.custom.light #sidebar-notes-button svg,
+.custom.light #sidebar-workspace-button svg {
+	color: #000 !important;
+	fill: currentColor !important;
+	stroke: currentColor !important;
+}
+
+/* Top-acties (expanded): labeltekst wordt zwart op hover */
+.custom.light #sidebar-new-chat-button:hover,
+.custom.light #sidebar-search-button:hover,
+.custom.light #sidebar-notes-button:hover,
+.custom.light #sidebar-workspace-button:hover {
+	color: #000 !important;
+}
+
+/* main screen (je bestaande regel) */
 .custom.light .app > div > div:nth-child(2) > div {
 	background-color: #e31818;
 }
 
-/* top nav */
+/* top nav (je bestaande regel) */
 .custom.light .app #nav {
 	background-color:#f4f4f4 !important;
 }
