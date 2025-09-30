@@ -1,30 +1,44 @@
 /* Left menu bar */
 .custom.light #sidebar {
 	background-color: #e31818;
+	color: #fff !important; /* maak alle tekst wit */
+}
 
+/* Alles binnen de sidebar erft de kleur (overrulet Tailwind text-gray-*) */
+.custom.light #sidebar * {
+	color: inherit !important;
+}
+
+/* Links/knoppen erven en blijven wit */
 .custom.light #sidebar a,
 .custom.light #sidebar button {
-    /* Let links and buttons inherit the sidebar text color */
-    color: inherit;
+	color: inherit !important;
 }
 
 .custom.light #sidebar a:hover,
 .custom.light #sidebar button:hover,
 .custom.light #sidebar #dropdownDots button {
-    color: inherit; /* keep text white on hover */
+	color: inherit !important;
+}
+
+/* Iconen ook wit */
+.custom.light #sidebar svg {
+	color: inherit;
+	fill: currentColor !important;
+	stroke: currentColor !important;
 }
 
 /* Remove the white-ish hover highlight used by Tailwind utility classes */
 .custom.light #sidebar .hover\:bg-gray-100\/50:hover,
 .custom.light #sidebar .hover\:bg-gray-100:hover,
 .custom.light #sidebar .dark\:hover\:bg-gray-900\/50:hover {
-    background-color: rgba(0, 0, 0, 0.06) !important; /* subtle dark overlay on any bg */
-    color: inherit;
+	background-color: rgba(0, 0, 0, 0.06) !important;
+	color: inherit;
 }
 
 /* Remove/neutralize the bottom white gradient behind the user section */
 .custom.light #sidebar .sidebar-bg-gradient-to-t {
-    background: none !important;
+	background: none !important;
 }
 
 /* main screen */
